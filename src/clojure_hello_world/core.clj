@@ -7,4 +7,3 @@
 
 (defmacro macro_test []
   (println "This is macro."))
-
