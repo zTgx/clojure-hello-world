@@ -5,4 +5,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]]
   :repl-options {:init-ns clojure-hello-world.main}
-  :main ^:skip-aot clojure-hello-world.main)
+  :main ^:skip-aot clojure-hello-world.main
+  :user {:jvm-opts ["-Dfile.encoding" "UTF-8"]} ;; ？？？中文输出乱码
+)
