@@ -15,6 +15,9 @@
 (defn indexable-word? [word]
   (> (count word) 2))
 
+(defn make-greeter [greeting-prefix]
+  (fn [username] (str greeting-prefix ", " username)))
+
 (defn example []
   (def res (greeting))
   (println (str "第一次调用无参数: " res))
@@ -26,4 +29,7 @@
   (println res)
   (def res (filter (fn [w] (> (count w) 2)) (clojure.string/split "A fine day" #"\W+")))
   (println (str "Use Anonymous function to filter result : " res))
+
+  (def hello-greeting (make-greeter "hello"))
+  (println (str "dynamic fn : " hello-greeting))
   )

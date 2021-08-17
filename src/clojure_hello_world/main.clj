@@ -3,7 +3,8 @@
   ;; (:require [clojure-hello-world.list :as cl])
   ;; (:require [clojure-hello-world.str  :as cs])
   ;; (:require [clojure-hello-world.date :as cd])
-  (:require [clojure-hello-world.started :as ct]))
+  ;; (:require [clojure-hello-world.started :as ct])
+  (:require [clojure-hello-world.chap2 :as ccp]))
 
 (defn -main [args]
     (println args)
@@ -13,5 +14,6 @@
     ;; (cd/Example)
     ;; (cl/example)
     ;; (cs/example)
-  (ct/example)
+    ;; (ct/example)
+    (ccp/example)
 )
